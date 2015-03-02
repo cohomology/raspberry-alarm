@@ -5,7 +5,7 @@ CFLAGS = -DSTANDALONE -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS \
                 -DOMX_SKIP64BIT -DUSE_EXTERNAL_OMX -DHAVE_LIBBCM_HOST \
                 -DUSE_EXTERNAL_LIBBCM_HOST -DUSE_VCHIQ_ARM -fPIC -ftree-vectorize -pipe \
                 -Werror -g -Wall -O2 -fvisibility=hidden 
-CXXFLAGS=-std=c++0x 
+CXXFLAGS=-std=c++11 
 LDFLAGS = -L/opt/vc/lib -lopenmaxil -lbcm_host -lvchiq_arm -lpthread -lomxcam
 INCLUDES = -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads \
                 -I/opt/vc/include/interface/vmcs_host/linux 
